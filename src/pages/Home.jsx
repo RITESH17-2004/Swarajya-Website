@@ -91,12 +91,12 @@ export default function Home() {
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Performing Arts">🎨</div>
               <h3>Design & Content</h3>
-              <p>Bringing stories to life. From posters and creatives to scripts and poetry – this team crafts the visual and verbal identity of Swarajya. Every color, every word, every detail reflects our cultural pride.</p>
+              <p>Bringing stories to life. From posters and creatives to scripts and poetry, this team crafts the visual and verbal identity of Swarajya. Every color, every word, every detail reflects our cultural pride.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Handshake">🌐</div>
-              <h3>Social Media & Outreach</h3>
-              <p>Capturing moments, connecting people. This team handles all our social platforms, ensuring the energy of each event reaches every follower. From stunning event photos to interactive reels – they keep Swarajya alive online.</p>
+              <h3>Social Media & Photography</h3>
+              <p>Capturing moments, connecting people. This team handles all our social platforms, ensuring the energy of each event reaches every follower. From stunning event photos to interactive reels, they keep Swarajya alive online.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Artist Palette">💻</div>
@@ -106,12 +106,17 @@ export default function Home() {
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Curry Rice">🎭</div>
               <h3>Culture</h3>
-              <p>Preserving tradition, inspiring performance. This team curates and leads all cultural events – be it dance, drama, or traditional ceremonies – keeping the rich essence of Marathi heritage alive at VIT Chennai.</p>
+              <p>Preserving tradition, inspiring performance. This team curates and leads all cultural events, be it dance, drama, or traditional ceremonies keeping the rich essence of Marathi heritage alive at VIT Chennai.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Curry Rice">⚙️</div>
               <h3>Operations</h3>
               <p>Managing chaos with calm. From logistics to execution, this team ensures every Swarajya event runs like clockwork. They’re the behind-the-scenes heroes who turn plans into action.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon" role="img" aria-label="Curry Rice">🥁</div>
+              <h3>Finance</h3>
+              <p>Balancing creativity with clarity, this team ensures Swarajya’s ideas turn into impactful realities. From budgeting and resource planning to sponsorships and strategic allocations. With transparency and responsibility at its core, they safeguard the club’s growth, making sure every rupee is invested with purpose and every initiative thrives with confidence.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon" role="img" aria-label="Curry Rice">🥁</div>

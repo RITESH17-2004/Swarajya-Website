@@ -387,7 +387,7 @@
   min-height: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -416,6 +416,9 @@
 /* Member Image - Fixed gap */
 .member-image-container {
   flex-shrink: 0;
+   width: fit-content;  /* ← Shrink to image size */
+  margin: 0 auto;  
+  
 }
 
 .member-image {
@@ -427,7 +430,7 @@
   border: 3px solid #e5e7eb;
   background: #f3f4f6;
   display: block;
-  margin: 0 auto;
+  margin: 0;
   transition: border-color 0.3s ease;
 }
 
@@ -440,6 +443,7 @@
   display: grid;
   place-items: center;
   text-align: center;
+  padding-top: 18px;
 }
 
 /* Responsive Design */
@@ -792,7 +796,9 @@
 /* Grid variations based on member count */
 .members-grid.single-member {
   grid-template-columns: 1fr;
-  max-width: 280px;
+  /* max-width: 280px; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  max-width: 240px;
 }
 
 .members-grid.two-members {
@@ -916,6 +922,7 @@
   
   .member-image {
     height: 180px;
+    
   }
   
   .member-name {
@@ -950,7 +957,7 @@
   }
   
   .member-image {
-    height: 160px;
+    height: 160px;  
   }
   
   .member-name {
@@ -1105,5 +1112,127 @@
   .timeline-content p {
     font-size: 0.85rem;
     line-height: 1.4;
+  }
+}
+
+/* Add these new styles for the year accordion dropdown */
+
+.year-accordion {
+  margin-bottom: 1.5rem;
+}
+
+.year-header {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #FF6B35;
+}
+
+.year-header:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.year-header.active {
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.year-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  color: #FF6B35;
+  flex-shrink: 0;
+}
+
+.chevron.rotated {
+  transform: rotate(180deg);
+}
+
+.year-content {
+  background: white;
+  border-radius: 0 0 12px 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: -4px;
+  animation: slideDown 0.3s ease;
+  border-left: 4px solid #FF6B35;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Update these existing styles */
+.executive-board-section,
+.department-leads-section {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  border-top: none;
+}
+
+.executive-board-section:last-child,
+.department-leads-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive styles for accordion */
+@media (max-width: 768px) {
+  .year-header {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .year-title {
+    font-size: 1.2rem;
+  }
+
+  .year-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .chevron {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .year-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .year-title {
+    font-size: 1.1rem;
+  }
+
+  .year-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .chevron {
+    width: 18px;
+    height: 18px;
   }
 }

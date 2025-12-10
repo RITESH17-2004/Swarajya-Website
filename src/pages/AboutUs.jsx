@@ -3,34 +3,21 @@ import logo from '../assets/logo.png';
 
 import ganesh from '../data/leads-images/ganesh.jpg'
 import sanjit from '../data/leads-images/sanjit.jpg'
-
 import akhilesh from '../data/leads-images/akhilesh.jpg';
-
 import shivam from '../data/leads-images/shivam.jpg';
-import meghraj from '../data/leads-images/meghraj.jpg';
-
-import vedant from '../data/leads-images/vedant.png';
-import rajat from '../data/leads-images/rajat1.png';
-
-import sakhi from '../data/leads-images/sakhi.png';
-import sanskruti from '../data/leads-images/sanskruti.jpg';
-
+import vedant from '../data/leads-images/vedant.jpg';
+import rajat from '../data/leads-images/r1.jpg';
+import sakhi from '../data/leads-images/sakhi.jpg';
 import anay from '../data/leads-images/anay.jpg';
-import ranvir from '../data/leads-images/ranvir.jpg';
-
-import omkar from '../data/leads-images/omkar.png';
+import omkar from '../data/leads-images/omkar.jpg';
 import ritesh from '../data/leads-images/ritesh.jpg';
-
-import janhavi from '../data/leads-images/janhvi.jpg';
+import janhavi from '../data/leads-images/janhavi.jpg';
 import varun from '../data/leads-images/varun.jpg';
-import sai from '../data/leads-images/sai.png';
-
-
+import sai from '../data/leads-images/sai.jpg';
 import vinayak from '../data/leads-images/vinayak.jpg';
 import shreya from '../data/leads-images/shreya.jpg';
-import sarang from '../data/leads-images/sarang.png';
-
-import swaraj from '../data/leads-images/swaraj.png';
+import sarang from '../data/leads-images/sarang.jpg';
+import swaraj from '../data/leads-images/swaraj.jpg';
 import nikhil from '../data/leads-images/nikhil.jpg';
 import anish from '../data/leads-images/anish.jpg';
 
@@ -204,7 +191,7 @@ export default function AboutUs() {
               {/* President */}
               <div className="vice-presidents-section">
                 <h4 className="department-title">President</h4>
-                <div className="members-grid">
+                <div className="members-grid single-member">
                   <div className="member-card">
                     <div className="member-image-container">
                       <img src={akhilesh} alt="Akhilesh Deshmukh" className="member-image" />
@@ -236,13 +223,7 @@ export default function AboutUs() {
               {/* General Secretaries */}
               <div className="general-secretaries-section">
                 <h4 className="department-title">General Secretaries</h4>
-                <div className="members-grid two-members">
-                  <div className="member-card">
-                    <div className="member-image-container">
-                      <img src={meghraj} alt="Meghraj Gaikwad" className="member-image" />
-                    </div>
-                    <h5 className="member-name">Meghraj Gaikwad</h5>
-                  </div>
+                <div className="members-grid single-member">
                   <div className="member-card">
                     <div className="member-image-container">
                       <img src={shivam} alt="Shivam Chavan" className="member-image" />
@@ -264,18 +245,12 @@ export default function AboutUs() {
                 <h4 className="department-title">
                   <span className="department-icon">🎨</span> Design and Content
                 </h4>
-                <div className="members-grid two-members">
+                <div className="members-grid single-member">
                   <div className="member-card">
                     <div className="member-image-container">
                       <img src={sakhi} alt="Sakhi Telang" className="member-image" />
                     </div>
                     <h5 className="member-name">Sakhi Telang</h5>
-                  </div>
-                  <div className="member-card">
-                    <div className="member-image-container">
-                      <img src={sanskruti} alt="Sanskruti Gole" className="member-image" />
-                    </div>
-                    <h5 className="member-name">Sanskruti Gole</h5>
                   </div>
                 </div>
               </div>
@@ -283,7 +258,7 @@ export default function AboutUs() {
               {/* Social Media and Photography */}
               <div className="department-section">
                 <h4 className="department-title">
-                  <span className="department-icon">🌐</span> Social Media & Outreach
+                  <span className="department-icon">🌐</span> Social Media & Photography
                 </h4>
                 <div className="members-grid two-members">
                   <div className="member-card">
@@ -294,9 +269,9 @@ export default function AboutUs() {
                   </div>
                   <div className="member-card">
                     <div className="member-image-container">
-                      <img src={ranvir} alt="Ranvir Deshmukh" className="member-image" />
+                      <img src={anish} alt="Anish Sadvilkar" className="member-image" />
                     </div>
-                    <h5 className="member-name">Ranvir Deshmukh</h5>
+                    <h5 className="member-name">Anish Sadvilkar</h5>
                   </div>
                 </div>
               </div>
@@ -376,23 +351,16 @@ export default function AboutUs() {
                 </div>
               </div>
 
-              {/* Pathak and Lezim */}
               <div className="department-section">
                 <h4 className="department-title">
                   <span className="department-icon">🥁</span> Pathak and Lezim
                 </h4>
-                <div className="members-grid three-members">
+                <div className="members-grid two-members">
                   <div className="member-card">
                     <div className="member-image-container">
                       <img src={swaraj} alt="Swaraj Tekale" className="member-image" />
                     </div>
                     <h5 className="member-name">Swaraj Tekale</h5>
-                  </div>
-                  <div className="member-card">
-                    <div className="member-image-container">
-                      <img src={anish} alt="Anish Sadvilkar" className="member-image" />
-                    </div>
-                    <h5 className="member-name">Anish Sadvilkar</h5>
                   </div>
                   <div className="member-card">
                     <div className="member-image-container">

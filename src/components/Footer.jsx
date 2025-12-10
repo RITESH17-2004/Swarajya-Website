@@ -111,9 +111,6 @@ export default function Footer() {
             <div className="footer-copyright">
               <p>&copy; {currentYear} Swarajya. All rights reserved.</p>
             </div>
-            <div className="footer-creators">
-              <p>Website designed and developed by Shivam Chavan & Ritesh Chaudhari</p>
-            </div>
           </div>
         </div>
       </div>
